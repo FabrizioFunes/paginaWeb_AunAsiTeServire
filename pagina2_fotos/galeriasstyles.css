@@ -3,15 +3,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background: #f8f8f8;
+  color: #333;
 }
 
-h1 {
-  text-align: center;
-  color: #fffdfd;
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 20px;
-}
+
 
 /*  */
 /* Pantalla de carga */
@@ -52,21 +48,32 @@ h1 {
     100% { transform: scale(1); }
 }
 
-
-/* NAVEGACIÓN */
-nav {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  text-align: center;
+/* header */
+header.hero {
+    position: relative;
+    background-size: cover;
+    background-color: #9560d292;
+    background-position: center;
+    height: 50vh; /* Reducir altura en móviles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
 }
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  text-align: center;
+
+
+
+header.hero h2 {
+    font-size: 6.5rem; /* Reducir el tamaño de la fuente */
+    margin-bottom: 1rem;
+    font-family: 'Playball', cursive;
+}
+
+header.hero p {
+    font-size: 4.2rem; /* Reducir el tamaño del texto */
+    font-family: 'Vollkorn', serif;
 }
 
 
@@ -81,8 +88,8 @@ nav a {
 
 .contenedor {
   background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #adadad;
+  border-radius: 40px;
   aspect-ratio: 1 / 1;
   display: flex;
   justify-content: center;
