@@ -24,6 +24,6 @@ Mercado Pago`;
 
   const carousel = document.querySelector('#multiImageCarousel');
     const carouselInstance = new bootstrap.Carousel(carousel, {
-      interval: 5000,
+      interval: 2500,
       ride: 'carousel'
     });

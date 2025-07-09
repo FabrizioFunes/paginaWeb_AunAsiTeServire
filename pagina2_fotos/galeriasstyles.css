@@ -8,8 +8,67 @@ body {
 
 h1 {
   text-align: center;
-  margin: 20px 0;
+  color: #fffdfd;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 20px;
 }
+
+/*  */
+/* Pantalla de carga */
+/*  */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen con animación de zoom sutil */
+#loader-image {
+    width: 420px;
+    height: auto;
+    animation: subtle-zoom 2.5s ease-in-out infinite;
+    border-radius: 12px;
+}
+/* Texto de carga */
+.loading-text {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@keyframes subtle-zoom {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.07); }
+    100% { transform: scale(1); }
+}
+
+
+/* NAVEGACIÓN */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 
 /* GALERÍA */
 .gallery {
@@ -106,10 +165,7 @@ h1 {
     height: auto;
   }
 
-  /* Oculta todas las imágenes que estén después de la número 9 */
-  .gallery .contenedor:nth-child(n+10) {
-    display: none;
-  }
+
 }
 
 @keyframes aparecer {
