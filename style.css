@@ -119,11 +119,11 @@ header.hero p {
 
 
 .boton {
-    background-color: #dbdbdb; /* Color del botón */
+    background-color: #007bff;; /* Color del botón */
     color: #000000; /* Color del texto del botón */
     border: none; /* Sin borde */
     border-radius: 50px; /* Bordes redondeados */
-    padding: 10px 50px; /* Espaciado interno */
+    padding: 1rem 3rem; /* Espaciado interno */
     font-size: 2rem; /* Tamaño de fuente */
     cursor: pointer; /* Cambia el cursor al pasar por encima */
     display: flex; /* Usa flexbox para centrar el contenido */
@@ -133,7 +133,7 @@ header.hero p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil al botón */
 }
 .boton:hover {
-    background-color: #a1a1a1; /* Color del botón al pasar el mouse */
+    background-color:  #0056b3; /* Color del botón al pasar el mouse */
 }
 
 /*  */
@@ -215,7 +215,7 @@ header.hero p {
 .escuela-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 2rem;
   flex-wrap: wrap;
 }
@@ -252,6 +252,72 @@ header.hero p {
 
 
 /*  */
+/* donaciones */
+/*  */
+.container-donaciones {
+  background-color: #ffc107;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.donaciones-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.donaciones-texto {
+  flex: 1 1 300px;
+}
+
+.donaciones-texto h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.donaciones-texto p {
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+
+.donaciones-info {
+  flex: 1 1 250px;
+  background-color: #fff8dc;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.donaciones-info p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  white-space: pre-line;
+}
+
+.donaciones-info button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.donaciones-info button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
 
 /*  */
 /* Footer */
@@ -426,6 +492,15 @@ footer {
     .footer-links h4,
     .footer-contact h4 {
         font-size: 1rem;
+    }
+
+    .donaciones-container {
+    flex-direction: column;
+    text-align: center;
+    }
+
+    .donaciones-info {
+    margin: 0 auto;
     }
 }
 

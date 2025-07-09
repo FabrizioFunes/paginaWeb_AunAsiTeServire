@@ -6,3 +6,24 @@ window.addEventListener('load', function () {
       loaderWrapper.style.display = 'none';
     }, 500);
   });
+
+
+  function copiarTexto() {
+    const texto = `CVU: 0000003100091360860162
+Alias: pulguita49
+CUIT/CUIL: 27059960569
+Mercado Pago`;
+
+    navigator.clipboard.writeText(texto).then(() => {
+    }).catch(err => {
+      console.error("Error al copiar: ", err);
+      alert("No se pudo copiar. Intenta manualmente.");
+    });
+  }
+
+
+  const carousel = document.querySelector('#multiImageCarousel');
+    const carouselInstance = new bootstrap.Carousel(carousel, {
+      interval: 5000,
+      ride: 'carousel'
+    });
