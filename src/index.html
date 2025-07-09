@@ -3,120 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex"> //recordar borrar esta etiqueta antes de subir a producción
+    <meta name="description" content="Aun así... Te sirve - Edith Winter">
     <title>escuela nueva argentina</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
+<!-- Pantalla de carga con imagen animada -->
+<div id="loader-wrapper"> 
+  <img src="fotos/carrusel_3/6925b363-5898-4ecd-babb-79b5b1322741.jpg" id="loader-image" alt="Cargando...">
+  <p class="loading-text">Cargando :)</p>
+</div>
 
-    <!-- Navegación -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="" class="logo">escuela nueva argentina</a>
-            <ul class="nav-links">
-                <li><a href="#history">Historia</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Encabezado con imagen del colegio y nombre -->
+
+
+    <!-- Encabezado con imagen y frase -->
     <header class="hero">
         <div class="overlay">
-            <h1>escuela nueva argentina</h1>
-            <p>Formando líderes del mañana</p>
+            <h1>Aun asi... Te sirve</h1>
+            <p>Edith Winter: Una historia de fe que inspira</p>
         </div>
     </header>
 
-    <!-- Sección de historia del colegio con details  -->
-    <section class="history" id="history">
-        <div class="container">
-            <h2>Nuestra Historia</h2>
+    <!-- fotos -->
+    <div id="multiImageCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
 
-            <!-- Primera parte de la historia en un details -->
-            <details>
-                <summary>Primera parte de la historia</summary>
-                <p>
-                    El Colegio Ejemplo fue fundado en el año 1990 con el objetivo de brindar una educación de calidad a los jóvenes de nuestra comunidad. Desde entonces, hemos crecido y evolucionado para convertirnos en una de las instituciones educativas más reconocidas de la región.
-                </p>
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center">
+        <img src="fotos/carrusel_1/b656952e-76db-4bd7-b9f7-c49adf525d4b.jpg" class="img-fluid mx-2" style="max-width: 18%;" alt="">
+        <img src="fotos/carrusel_1/descargar.jpg" class="img-fluid mx-2" style="max-width: 18%;" alt="">
+        <img src="fotos/carrusel_2/eb4b0464-2cf0-4cca-acc0-92d817ab53d1.jpg" class="img-fluid mx-2" style="max-width: 18%;" alt="">
+        <img src="fotos/carrusel_2/descargar (1).jpg" class="img-fluid mx-2" style="max-width: 18%;" alt="">
+      </div>
+    </div>
 
-                <!-- Galería de fotos intercalada -->
-                <div class="gallery">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 1">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 2">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 3">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 4">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 5">
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+        <img src="fotos/carrusel_2/730bd8b0-3d2f-48fe-ac3f-d1d06345f1a0.jpg" class="img-fluid mx-2" style="max-width: 18%;" alt="">
+        <img src="fotos/carrusel_3/92f62e8c-72f3-4fb8-9f78-5c08e87300a6.jpg" class="img-fluid mx-2" style="max-width: 18%;" alt="">
+        <img src="fotos/carrusel_3/6925b363-5898-4ecd-babb-79b5b1322741.jpg" class="img-fluid mx-2" style="max-width: 18%;" alt="">
+        <img src="fotos/carrusel_3/descargar.jpg" class="img-fluid mx-2" style="max-width: 18%;" alt="">
+      </div>
+    </div>
 
-                </div>
-            </details>
+<!-- Slide 3 -->
 
-            <details>
-                <summary>Segunda parte de la historia</summary>
-                <p>
-                    Nuestra misión es formar estudiantes íntegros, comprometidos con el bien común y preparados para enfrentar los desafíos del mundo moderno. A lo largo de los años, hemos incorporado nuevas tecnologías y metodologías pedagógicas innovadoras para mejorar la experiencia educativa.
-                </p>
+<!-- Slide 4 -->
 
-                <div class="gallery">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 6">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 7">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 8">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 9">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 10">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 11">
-                </div>
-            </details>
+<!-- Slide 5 -->
 
-            <details>
-                <summary>tercera parte de la historia</summary>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi veritatis alias eaque eos adipisci magni error. Sequi facilis, corrupti ad culpa officia ipsum quas reprehenderit cumque sunt labore vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quaerat? Sint, praesentium tenetur? Voluptas ab esse obcaecati minima exercitationem sunt deserunt consectetur eaque. Praesentium assumenda porro nostrum vel totam architecto.
-                </p>
+  </div>
+  <button class="boton">Ver fotos</button>
+</div>
 
-                <div class="gallery">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 12">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 13">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 14">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 15">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 16">
-                </div>
-            </details>
+<!-- Amazon
 
-            <details>
-                <summary>cuarta parte de la historia</summary>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi veritatis alias eaque eos adipisci magni error. Sequi facilis, corrupti ad culpa officia ipsum quas reprehenderit cumque sunt labore vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quaerat? Sint, praesentium tenetur? Voluptas ab esse obcaecati minima exercitationem sunt deserunt consectetur eaque. Praesentium assumenda porro nostrum vel totam architecto.
-                </p>
+<div class="container-amazon">
+  <div class="amazon-container">
+    <div class="amazon-texto">
+      <h2>AMAZON</h2>
+      <p>Descubre "Aun así... Te sirve", la novela que te atrapará desde la primera página y te dejará reflexionando mucho después de terminarla</p>
+      <a href="https://www.amazon.com" target="_blank" class="btn btn-primary">Ir a Amazon</a>
+    </div>
+    <img src="fotos-libro/libro-centrado.png" alt="Libro">
+  </div>
+</div>
 
-                <div class="gallery">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 17">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 18">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 19">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 20">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 21">
-                </div>
-            </details>
+-->
 
-            <details>
-                <summary>quinta parte de la historia</summary>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi veritatis alias eaque eos adipisci magni error. Sequi facilis, corrupti ad culpa officia ipsum quas reprehenderit cumque sunt labore vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quaerat? Sint, praesentium tenetur? Voluptas ab esse obcaecati minima exercitationem sunt deserunt consectetur eaque. Praesentium assumenda porro nostrum vel totam architecto.
-                </p>
-
-                <div class="gallery">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 22">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 23">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 24">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 25">
-                    <img src="https://via.placeholder.com/400x300" alt="Foto 26">
-                </div>
-            </details>
+<!-- Escuela-->
+<div class="container-escuela">
+  <div class="escuela-container">
+    <div class="escuela-texto">
+      <h2>ESCUELA NUEVA ARGENTINA</h2>
+      <p>En la Escuela Nueva Argentina, fomentamos un ambiente de aprendizaje inclusivo y colaborativo, donde cada estudiante puede alcanzar su máximo potencial.</p>
+      <a href="https://youtube.com/playlist?list=PLTF_KM4wzo90W3AHEZY3PIELIn7Hh8EPb&si=sZOv1t9xJzUs86dB" target="_blank" class="btn btn-primary">Ver Videos</a>
+      <br>
+      <a href="https://facebook.com" target="_blank" class="btn btn-primary">Facebook</a>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RqW2UI3cRLo?si=NIZvB2euHVwULM_7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
 
 
 
 
-        </div>
-    </section>
+
+
+
+
+
 
     <!-- Footer -->
     <footer id="Contacto">
@@ -130,12 +113,12 @@
             </div>
 
             <div class="footer-links">
-                <h4>Enlaces Útiles</h4>
+                <h4>Enlaces </h4>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Historia</a></li>
-                    <li><a href="#">Galería</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">red1</a></li>
+                    <li><a href="#">red2</a></li>
+                    <li><a href="#">red3</a></li>
+                    <li><a href="#">red4</a></li>
                 </ul>
             </div>
 
@@ -148,9 +131,34 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 Colegio Ejemplo - Todos los derechos reservados</p>
+            <p>&copy;  maria eugenia - Todos los derechos reservados</p>
         </div>
     </footer>
+
+
+
+
+
+
+    <!-- Scripts -->
+  <script>
+    const carousel = document.querySelector('#multiImageCarousel');
+    const carouselInstance = new bootstrap.Carousel(carousel, {
+      interval: 100,
+      ride: 'carousel'
+    });
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+
+
+
+
+
+
 
 </body>
 </html>
