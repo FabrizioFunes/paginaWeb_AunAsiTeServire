@@ -54,7 +54,7 @@ header.hero {
     background-size: cover;
     background-color: #9560d292;
     background-position: center;
-    height: 50vh; /* Reducir altura en móviles */
+    height: 20vh; /* Reducir altura en móviles */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,13 +66,13 @@ header.hero {
 
 
 header.hero h2 {
-    font-size: 6.5rem; /* Reducir el tamaño de la fuente */
+    font-size: 3.5rem; /* Reducir el tamaño de la fuente */
     margin-bottom: 1rem;
     font-family: 'Playball', cursive;
 }
 
 header.hero p {
-    font-size: 4.2rem; /* Reducir el tamaño del texto */
+    font-size: 2.2rem; /* Reducir el tamaño del texto */
     font-family: 'Vollkorn', serif;
 }
 
@@ -180,6 +180,21 @@ header.hero p {
   to { transform: scale(1); opacity: 1; }
 }
 
+
+  
+@media (max-width: 720px) {
+    header.hero {
+        height: 20vh; /* Reducir la altura del banner */
+    }
+
+    header.hero h2 {
+        font-size: 2rem;
+    }
+
+    header.hero p {
+        font-size: 1rem;
+    }
+
 .close {
   color: #aaa;
   float: right;
@@ -198,9 +213,12 @@ header.hero p {
   border-radius: 8px;
 }
 
+}
+
+
 /* extra para dispositivos muy pequeños */
 @media (max-width: 400px) {
-  h1 {
+  h2 {
     font-size: 1.5rem;
   }
 
