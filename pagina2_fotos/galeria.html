@@ -6,6 +6,7 @@
     <title>Galería de Fotos</title>
     <link rel="stylesheet" href="galeriasstyles.css" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
     <!-- fuentes titulos -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +15,8 @@
 <!-- fuentes texto -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playball&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" 
+<link href="https://fonts.googleapis.com/css2?family=Playball&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap">
+
 </head>
 <body>
     <div id="loader-wrapper"> 
@@ -31,36 +33,224 @@
         </div>
     </header>
 
-    <div class="gallery">
-        <!-- Cada contenedor ahora tiene un data-id único -->
-        <div class="contenedor" data-id="cap1"><img src="../fotos-dibujo/Cap-1.png" alt=""></div>
-        <div class="contenedor" data-id="cap2a"><img src="../fotos-dibujo/Cap-2a.png" alt=""></div>
-        <div class="contenedor" data-id="cap2b"><img src="../fotos-dibujo/Cap-2b.png" alt=""></div>
-        <div class="contenedor" data-id="cap3"><img src="../fotos-dibujo/Cap-3.png" alt=""></div>
-        <div class="contenedor" data-id="cap4"><img src="../fotos-dibujo/Cap-4.png" alt=""></div>
-        <div class="contenedor" data-id="cap5"><img src="../fotos-dibujo/Cap-5.png" alt=""></div>
-        <div class="contenedor" data-id="cap6"><img src="../fotos-dibujo/Cap-6.png" alt=""></div>
-        <div class="contenedor" data-id="cap7"><img src="../fotos-dibujo/Cap-7.png" alt=""></div>
-        <div class="contenedor" data-id="cap8"><img src="../fotos-dibujo/Cap-8.png" alt=""></div>
-        <div class="contenedor" data-id="cap9"><img src="../fotos-dibujo/Cap-9.png" alt=""></div>
-        <div class="contenedor" data-id="cap10"><img src="../fotos-dibujo/Cap-10.jpeg" alt=""></div>
-        <div class="contenedor" data-id="cap11"><img src="../fotos-dibujo/Cap-11.png" alt=""></div>
-        <div class="contenedor" data-id="cap12"><img src="../fotos-dibujo/Cap-12.png" alt=""></div>
-        <div class="contenedor" data-id="cap13"><img src="../fotos-dibujo/Cap-13.png" alt=""></div>
-        <div class="contenedor" data-id="cap14"><img src="../fotos-dibujo/Cap-14.png" alt=""></div>
-        <div class="contenedor" data-id="cap16"><img src="../fotos-dibujo/Cap-16.jpeg" alt=""></div>
-    </div>
+<div class="galeria">
 
-    <!-- Ventana modal -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="cerrarModal()">&times;</span>
-            <div id="modal-body" class="modal-body">
-                <!-- imágenes dinámicamente -->
-            </div>
-        </div>
-    </div>
+  <!-- 🟢 GALERÍA 1 -->
+  <div class="cuadro">
+    <!-- Imagen de portada (miniatura visible en la grilla) -->
+    <a href="../fotos-dibujo/Cap-1.png" class="glightbox grupo1">
+      <img src="../fotos-dibujo/Cap-1.png" alt="Galería 1"> <!-- 🔸 src = imagen miniatura visible -->
+    </a>
+    <!-- Imágenes internas de la galería (no visibles en la grilla) -->
+    <a href="../fotos/CAPITULO 1/Ambulancia de la Clínica Cruz Blanca  .jpg" class="glightbox grupo1" style="display:none;"></a> 
+    <a href="../fotos/CAPITULO 1/Capilla Allen Gardner.png" class="glightbox grupo1" style="display:none;"></a> 
+    <a href="../fotos/CAPITULO 1/Familia Winter.jpg" class="glightbox grupo1" style="display:none;"></a> 
+    <a href="../fotos/CAPITULO 1/Foto_2025-03-12_210117.jpg" class="glightbox grupo1" style="display:none;"></a> 
+    <a href="../fotos/CAPITULO 1/Luz, Sr. Maria y Blanca.jpg" class="glightbox grupo1" style="display:none;"></a> 
+    <a href="../fotos/CAPITULO 1/Sanatorio cruz blanca antes y después.jpeg" class="glightbox grupo1" style="display:none;"></a> 
+    <a href="../fotos/CAPITULO 1/sanatorio cruz blanca.jpg" class="glightbox grupo1" style="display:none;"></a> 
+    <a href="../fotos/CAPITULO 1/Schwestern.jpg" class="glightbox grupo1" style="display:none;"></a> 
+  </div>
 
+  <!-- 🟢 GALERÍA 2 -->
+  <div class="cuadro">
+    <a href="../fotos-dibujo/Cap-2.jpeg" class="glightbox grupo2">
+      <img src="../fotos-dibujo/Cap-2.jpeg" alt="Galería 2">
+    </a>
+    <a href="../fotos/CAPITULO 2/Edith Adolescente .jpg" class="glightbox grupo2" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 2/Edith Adolescente.jpg" class="glightbox grupo2" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 2/Edith dando clases junto con Nelida.jpg" class="glightbox grupo2" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 2/Edith de niña .jpg" class="glightbox grupo2" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 2/Edith siendo maestra en la escuela junto con Nelida .jpg" class="glightbox grupo2" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 2/Edith y Titi .jpg" class="glightbox grupo2" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 2/Edith y Titi.jpg" class="glightbox grupo2" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 2/Ester, Norma y Edith junto con una prima.jpg" class="glightbox grupo2" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 2/Festejo 15 años Edith(1).jpg" class="glightbox grupo2" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 2/Festejo 15 años Edith.jpg" class="glightbox grupo2" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 2/Nelida, Edith y Ronald en su festejo de 15 años .jpg" class="glightbox grupo2" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 2/Tren Trochita(1).jpeg" class="glightbox grupo2" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 2/Tren Trochita.jpeg" class="glightbox grupo2" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 2/WhatsApp Image 2025-07-06 at 15.49.05.jpeg" class="glightbox grupo2" style="display:none;"></a>
+  </div>
+
+  <!-- 🟢 GALERÍA 3 -->
+  <div class="cuadro">
+    <a href="../fotos-dibujo/Cap-3.png" class="glightbox grupo3">
+      <img src="../fotos-dibujo/Cap-3.png" alt="Galería 3">
+    </a>
+    <a href="../fotos/CAPITULO 3/Edith con sus amigas del Instituto.jpg" class="glightbox grupo3" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 3/Edith en el instituto en Villa Maria .jpg" class="glightbox grupo3" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 3/Edith en su luna de miel.jpg" class="glightbox grupo3" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 3/Edith llegando al casamiento .jpg" class="glightbox grupo3" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 3/Edith y Juan en su casamiento .jpg" class="glightbox grupo3" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 3/Edith y Juan en su casamiento, acompañados por sus padres.jpg" class="glightbox grupo3" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 3/Edith y Juan.jpg" class="glightbox grupo3" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 3/Edith y Ronald.jpg" class="glightbox grupo3" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 3/Edith, Juan y amigos en el instituto en Villa Maria .jpg" class="glightbox grupo3" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 3/Edith, Juan y mas alumnos del Instituto .jpg" class="glightbox grupo3" style="display:none;"></a>
+  </div>
+
+  <!-- 🟢 GALERÍA 4 -->
+  <div class="cuadro">
+    <a href="../fotos-dibujo/Cap-4.png" class="glightbox grupo4">
+      <img src="../fotos-dibujo/Cap-4.png" alt="Galería 4">
+    </a>
+    <a href="../fotos/CAPITULO 4/Chris en un campamento .jpg" class="glightbox grupo4" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 4/Crhis en un campamento(1).jpg" class="glightbox grupo4" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 4/Crhis en un campamento.jpg" class="glightbox grupo4" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 4/Edith embarazada de Chris en un campamento junto con Juan .jpg" class="glightbox grupo4" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 4/Edith y Crhis jpg.jpg" class="glightbox grupo4" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 4/Edith y Crhis(1).jpg" class="glightbox grupo4" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 4/Edith y Crhis(2).jpg" class="glightbox grupo4" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 4/Edith y Crhis.jpg" class="glightbox grupo4" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 4/Juan y Crhis .jpg" class="glightbox grupo4" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 4/Norman y Crhis.jpg" class="glightbox grupo4" style="display:none;"></a>
+  </div>
+
+  <!-- 🟢 GALERÍA 5 -->
+  <div class="cuadro">
+    <a href="../fotos-dibujo/Cap-5.png" class="glightbox grupo5">
+      <img src="../fotos-dibujo/Cap-5.png" alt="Galería 5">
+    </a>
+    <a href="../fotos/CAPITULO 5/Campamentos.png" class="glightbox grupo5" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 5/Edith junto a Crhis y Norman .jpg" class="glightbox grupo5" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 5/Edith junto a Crhis y Norman en campamentos.jpg" class="glightbox grupo5" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 5/Esquel .jpeg" class="glightbox grupo5" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 5/Hora Feliz.png" class="glightbox grupo5" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 5/Juan y Edith en una navidad junto a Crhis y Norman .jpeg" class="glightbox grupo5" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 5/Juan y Edith junto a la comunidad de la iglesia_.jpg" class="glightbox grupo5" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 5/Obra en la iglesia .jpeg" class="glightbox grupo5" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 5/Schwester dando clases a alumnos.jpg" class="glightbox grupo5" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 5/Schwester dando una lección biblica.jpg" class="glightbox grupo5" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 5/Schwester dando una lección biblica.jpg" class="glightbox grupo5" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 5/Servicio en Campamentos.png" class="glightbox grupo5" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 5/WhatsApp Image 2025-07-06 at 16.17.10.jpeg" class="glightbox grupo5" style="display:none;"></a>
+  </div>
+
+  <!-- 🟢 GALERÍA 6 y 7-->
+  <div class="cuadro">
+    <a href="../fotos-dibujo/Cap-6.png" class="glightbox grupo6">
+      <img src="../fotos-dibujo/Cap-6.png" alt="Galería 6">
+    </a>
+    <a href="../fotos/CAPITULO 6 Y 7/Auto en el cual Edith y Juan viajaban_.jpg" class="glightbox grupo6" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 6 Y 7/Edith embarazada de Karin, junto a Norman y Crhis en Rio Cuarto.jpg" class="glightbox grupo6" style="display:none;"></a>
+  </div>
+
+  <!-- 🟢 GALERÍA 8 -->
+  <div class="cuadro">
+    <a href="../fotos-dibujo/Cap-8.png" class="glightbox grupo8">
+      <img src="../fotos-dibujo/Cap-8.png" alt="Galería 8">
+    </a>
+    <a href="../fotos/CAPITULO 8/Crhis y Karin.jpg" class="glightbox grupo8" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 8/Edith con Norman, Chris y Karin.jpg" class="glightbox grupo8" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 8/Edith junto a Karin.jpg" class="glightbox grupo8" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 8/Edith, Nelida y Norma, junto con Crhis, Norman y Karin.jpg" class="glightbox grupo8" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 8/Norman y Crhis.jpg" class="glightbox grupo8" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 8/Norman, Karin y Crhis.jpg" class="glightbox grupo8" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 8/Ronald y Nelida, junto a Crhis, Norman y Karin.jpg" class="glightbox grupo8" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 8/Ronald, Karin y Nelida.jpg" class="glightbox grupo8" style="display:none;"></a>
+  </div>
+
+  <!-- 🟢 GALERÍA 9 -->
+  <div class="cuadro">
+    <a href="../fotos-dibujo/Cap-9.png" class="glightbox grupo9">
+      <img src="../fotos-dibujo/Cap-9.png" alt="Galería 9">
+    </a>
+    <a href="../fotos/CAPITULO 9" class="glightbox grupo9" style="display:none;"></a>
+  </div>
+
+  <!-- 🟢 GALERÍA 10 -->
+  <div class="cuadro">
+    <a href="../fotos-dibujo/Cap-10.jpeg" class="glightbox grupo10">
+      <img src="../fotos-dibujo/Cap-10.jpeg" alt="Galería 10">
+    </a>
+    <a href="../fotos/CAPITULO 10/Civil de Edith y Rodolfo.jpg" class="glightbox grupo10" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 10/Crhis, Edith, Karin y Rodolfo.jpg" class="glightbox grupo10" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 10/Edith en el casamiento con Rodolfo.jpg" class="glightbox grupo10" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 10/Rodolfo y Edith en su casamiento .jpg" class="glightbox grupo10" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 10/Rodolfo y Edith.jpeg" class="glightbox grupo10" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 10/Rodolfo, Norman y Edith, y Karin con Crhis.jpeg" class="glightbox grupo10" style="display:none;"></a>
+  </div>
+
+  <!-- 🟢 GALERÍA 11 -->
+  <div class="cuadro">
+    <a href="../fotos-dibujo/Cap-11.png" class="glightbox grupo11">
+      <img src="../fotos-dibujo/Cap-11.png" alt="Galería 11">
+    </a>
+    <a href="../fotos/CAPITULO 11/Edith embarazada de Keila(1).jpg" class="glightbox grupo11" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 11/Edith embarazada de Keila.jpg" class="glightbox grupo11" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 11/Edith y Brian.jpg" class="glightbox grupo11" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 11/Karin y Brian.jpg" class="glightbox grupo11" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 11/primer aula en el garage.jpg" class="glightbox grupo11" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 11/primer grado de jardín.jpg" class="glightbox grupo11" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 11/Rodolfo y Edith, con Crhis, Norman, Karin y Keila.jpg" class="glightbox grupo11" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 11/Rodolfo y Keila.jpg" class="glightbox grupo11" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 11/Terreno de la futura Nueva Argentina.jpg" class="glightbox grupo11" style="display:none;"></a>
+  </div>
+
+  <!-- 🟢 GALERÍA 12 y 13 -->
+  <div class="cuadro">
+    <a href="../fotos-dibujo/Cap-12.png" class="glightbox grupo12">
+      <img src="../fotos-dibujo/Cap-12.png" alt="Galería 12">
+    </a>
+    <a href="../fotos/CAPITULO 12 Y 13/Brian y Edith.jpg" class="glightbox grupo12" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 12 Y 13/Brian(1).jpg" class="glightbox grupo12" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 12 Y 13/Brian, Karin y Keila junto con .jpg" class="glightbox grupo12" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 12 Y 13/Brian.jpg" class="glightbox grupo12" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 12 Y 13/Karin y Brian.jpg" class="glightbox grupo12" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 12 Y 13/Keila y Brian.jpg" class="glightbox grupo12" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 12 Y 13/Norman .jpg" class="glightbox grupo12" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 12 Y 13/Norman.jpg" class="glightbox grupo12" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 12 Y 13/Rodolfo y Brian.jpg" class="glightbox grupo12" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 12 Y 13/Rodolfo, Edith, Keila, Brian, Crhis, Norman y Karin .jpg" class="glightbox grupo12" style="display:none;"></a>
+    <a href="../fotos/CAPITULO 12 Y 13/Toda la familia.jpg" class="glightbox grupo12" style="display:none;"></a>
+
+
+  </div>
+
+
+  <!-- 🟢 GALERÍA 14 -->
+  <div class="cuadro">
+    <a href="../fotos-dibujo/Cap-14.png" class="glightbox grupo14">
+      <img src="../fotos-dibujo/Cap-14.png" alt="Galería 14">
+    </a>
+    <a href="../fotos/CAPITULO 14/" class="glightbox grupo14" style="display:none;"></a>
+
+  </div>
+
+  <!-- 🟢 GALERÍA 15 
+  <div class="cuadro">
+    <a href="../" class="glightbox grupo15">
+      <img src="" alt="Galería 15">
+    </a>
+    <a href="" class="glightbox grupo15" style="display:none;"></a>
+  </div>
+  -->
+
+  <!-- 🟢 GALERÍA 16 
+  <div class="cuadro">
+    <a href="" class="glightbox grupo16">
+      <img src="" alt="Galería 16">
+    </a>
+    <a href="" class="glightbox grupo16" style="display:none;"></a>
+  </div>
+  -->
+
+  <!-- 🟢 GALERÍA 17 
+  <div class="cuadro">
+    <a href="" class="glightbox grupo17">
+      <img src="" alt="Galería 17">
+    </a>
+    <a href="" class="glightbox grupo17" style="display:none;"></a>
+  </div>
+  -->
+
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script src="galeriascript.js"></script>
 </body>
 </html>

@@ -7,226 +7,142 @@ body {
   color: #333;
 }
 
-
-
-/*  */
 /* Pantalla de carga */
-/*  */
 #loader-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    z-index: 9999;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Imagen con animación de zoom sutil */
 #loader-image {
-    width: 420px;
-    height: auto;
-    animation: subtle-zoom 2.5s ease-in-out infinite;
-    border-radius: 12px;
+  width: 420px;
+  height: auto;
+  animation: subtle-zoom 2.5s ease-in-out infinite;
+  border-radius: 12px;
 }
-/* Texto de carga */
+
 .loading-text {
-    margin-top: 15px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
-    font-family: 'Open Sans', sans-serif;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @keyframes subtle-zoom {
-    0%   { transform: scale(1); }
-    50%  { transform: scale(1.07); }
-    100% { transform: scale(1); }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+  100% { transform: scale(1); }
 }
 
-/* header */
+/* Encabezado principal */
 header.hero {
-    position: relative;
-    background-size: cover;
-    background-color: #9560d292;
-    background-position: center;
-    height: 20vh; /* Reducir altura en móviles */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-
-
-header.hero h2 {
-    font-size: 3.5rem; /* Reducir el tamaño de la fuente */
-    margin-bottom: 1rem;
-    font-family: 'Playball', cursive;
-}
-
-header.hero p {
-    font-size: 2.2rem; /* Reducir el tamaño del texto */
-    font-family: 'Vollkorn', serif;
-}
-
-
-/* GALERÍA */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  padding: 10px;
-  justify-items: center;
-}
-
-.contenedor {
-  background-color: #fff;
-  border: 1px solid #adadad;
-  border-radius: 40px;
-  aspect-ratio: 1 / 1;
+  position: relative;
+  background-color: #9560d292;
+  background-position: center;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header.hero h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Playball', cursive;
+}
+
+header.hero p {
+  font-size: 2.2rem;
+  font-family: 'Vollkorn', serif;
+}
+
+/* GALERÍA RESPONSIVA */
+/* Contenedor de toda la galería */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Cuadro contenedor */
+.cuadro {
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
   overflow: hidden;
-  transition: transform 0.2s;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contenedor:hover {
-  transform: scale(1.02);
+/* Hover */
+.cuadro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-.contenedor img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  transition: transform 0.2s;
-}
-
-/* MODAL */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
+/* Imagen dentro del cuadro */
+.cuadro img {
   width: 100%;
   height: 100%;
-  overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
+  object-fit: contain;
+  display: block;
+  padding: 8px;
 }
 
-.modal-content {
-  background-color: #fff;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 800px;
-  box-sizing: border-box;
-  position: relative; /* para posicionar la X respecto al modal */
-  animation: aparecer 0.3s ease-out;
-  padding-top: 50px; /* espacio para que no tape contenido */
-}
 
-.close {
-  position: sticky;
-  top: 10px;
-  right: 15px;
-  z-index: 1000;
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  background-color: white;
-  border-radius: 50%;
-  padding: 5px 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  transition: background 0.2s;
-}
-
-.close:hover {
-  color: black;
-  background-color: #eee;
-}
-
-/* 💻 En pantallas grandes: mostrar solo 3x3 imágenes más grandes */
-@media (min-width: 1024px) {
-  .gallery {
+/* 🟣 Tablets: 3 columnas */
+@media (max-width: 1024px) {
+  .galeria {
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1000px;
-    margin: 0 auto;
   }
-
-  .contenedor {
-    aspect-ratio: 1 / 1;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-  }
-
-
 }
 
-@keyframes aparecer {
-  from { transform: scale(0.9); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+/* 🔵 Celulares grandes: 2 columnas */
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
+/* 🔴 Celulares chicos: 1 columna */
+@media (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
 
-  
+/* Ajustes generales de encabezado en móviles */
 @media (max-width: 720px) {
-    header.hero {
-        height: 20vh; /* Reducir la altura del banner */
-    }
+  header.hero {
+    height: 20vh;
+  }
 
-    header.hero h2 {
-        font-size: 2rem;
-    }
+  header.hero h2 {
+    font-size: 2rem;
+  }
 
-    header.hero p {
-        font-size: 1rem;
-    }
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
+  header.hero p {
+    font-size: 1rem;
+  }
 }
 
-.close:hover {
-  color: black;
-}
-
-.modal-body img {
-  width: 100%;
-  margin: 10px 0;
-  border-radius: 8px;
-}
-
-}
-
-
-/* extra para dispositivos muy pequeños */
 @media (max-width: 400px) {
   h2 {
     font-size: 1.5rem;
-  }
-
-  .modal-content {
-    padding: 10px;
-  }
-
-  .close {
-    font-size: 24px;
   }
 }
