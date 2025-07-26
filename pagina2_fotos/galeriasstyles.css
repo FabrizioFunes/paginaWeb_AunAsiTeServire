@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f8f8f8;
+  background: #f8f8f0;
   color: #333;
 }
 
@@ -22,19 +22,12 @@ body {
   align-items: center;
 }
 
-#loader-image {
-  width: 420px;
-  height: auto;
-  animation: subtle-zoom 2.5s ease-in-out infinite;
-  border-radius: 12px;
-}
-
-.loading-text {
+  .loading-text {
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 38px;
   font-weight: 600;
   color: #333;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Vollkorn', serif;
 }
 
 @keyframes subtle-zoom {
@@ -103,6 +96,21 @@ header.hero p {
   display: block;
   padding: 8px;
 }
+
+/* Estilo personalizado para epígrafes de GLightbox */
+.glightbox-container .gdesc-inner {
+  text-align: center;         /* Centra el texto */
+  font-size: 1.3em;           /* Aumenta el tamaño del texto */
+  font-weight: 500;           /* Negrita media */
+  line-height: 1.4;
+  padding: 10px 20px;         /* Espaciado interno */
+  font-family: 'Vollkorn', serif;
+  color: white;               /* Color del texto */
+}
+
+
+
+
 
 
 /* 🟣 Tablets: 3 columnas */
