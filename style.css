@@ -113,13 +113,33 @@ header.hero p {
 /* Asegurar que las imágenes se adapten al contenedor sin estirarse y sin recortes */
 .carousel-item img {
     width: 100%;
-    height: auto;
+    height: auto; /* Mantiene la proporción de la imagen */
+    min-height: 300px; /* Asegura que la imagen tenga una altura mínima */
     object-fit: contain; /* Asegura que la imagen se mantenga completa dentro del contenedor */
     max-height: 300px; /* Limita la altura máxima a 300px */
     max-width: 600px; /* Limita el ancho máximo a 600px */
     margin: 0 auto; /* Centra la imagen si es más pequeña que el contenedor */
     border-radius: 15px;
 }
+
+.carousel-item {
+  min-height: 400px; /* O el alto que quieras para todos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item .container {
+  width: 100%;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 250px; /* Puedes ajustarlo a gusto */
+}
+
 
 
 .boton {
@@ -365,7 +385,7 @@ footer {
 
 
 /* Media Queries para pantallas móviles */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     header.hero {
         height: 40vh; /* Reducir la altura del banner */
     }
