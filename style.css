@@ -123,7 +123,7 @@ header.hero p {
 }
 
 .carousel-item {
-  min-height: 400px; /* O el alto que quieras para todos */
+  min-height: fit-content; /* O el alto que quieras para todos */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,6 +398,11 @@ footer {
         font-size: 2rem;
     }
 
+        .carousel-item img {
+        max-height: 150px ; /* Ajustar la altura máxima de las imágenes del carrusel */
+        min-height: auto;
+    }
+
     .footer-container {
         flex-direction: column;
         text-align: center;
@@ -462,6 +467,11 @@ footer {
         font-size: 1.5rem;
     }
 
+        .carousel-item img {
+        max-height: 150px ; /* Ajustar la altura máxima de las imágenes del carrusel */
+        min-height: auto;
+    }
+
     footer {
         padding: 1.5rem 0.5rem;
     }
@@ -481,4 +491,6 @@ footer {
     margin: 0 auto;
     }
 }
+
+
 
