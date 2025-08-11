@@ -399,8 +399,9 @@ footer {
     }
 
         .carousel-item img {
-        max-height: 150px ; /* Ajustar la altura máxima de las imágenes del carrusel */
-        min-height: auto;
+        min-height: 130px;
+        min-width: 90px; 
+        
     }
 
     .footer-container {
@@ -467,10 +468,13 @@ footer {
         font-size: 1.5rem;
     }
 
-        .carousel-item img {
-        max-height: 150px ; /* Ajustar la altura máxima de las imágenes del carrusel */
-        min-height: auto;
+        .carousel-item{
+        min-height: 130px;
+        min-height: 100px;
+        max-height: 130px;
     }
+
+
 
     footer {
         padding: 1.5rem 0.5rem;

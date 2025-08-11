@@ -10,7 +10,7 @@ window.addEventListener('load', function () {
 
   function copiarTexto() {
     const texto = `CVU: 0000003100091360860162
-Alias: pulguita49
+Alias: teservire
 CUIT/CUIL: 27059960569
 Mercado Pago`;
 
