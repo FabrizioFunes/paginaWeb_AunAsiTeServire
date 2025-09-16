@@ -168,11 +168,17 @@ header.hero p {
   display: flex;
   justify-content: center;
   padding: 2rem;
-  background-color: #ff9900;
+  background-color: #a9cef6;
   margin: 2rem auto;
   border-radius: 15px;
   max-width: 80%; /* ajusta según lo ancho que quieras */
   width: 100%;
+}
+
+.botonAmazon {
+  background-color: #9790d3 !important; /* Color del botón de Amazon */
+  color: white !important; /* Color del texto del botón */
+  font-weight: bold !important;
 }
 
 .amazon-container {
@@ -192,14 +198,14 @@ header.hero p {
 }
 
 .amazon-texto h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   margin: 0;
   color: #1a1a1a;
 }
 
 .amazon-texto p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin: 0;
   color: #222;
   max-width: 600px;
@@ -223,6 +229,14 @@ header.hero p {
 
 .amazon-container img:hover {
   transform: scale(1.05);
+}
+
+.advertencia {
+  font-size: 1rem;
+  color: #330000;
+  margin-top: 0px;
+  padding-top: 0;
+  font-style: italic;
 }
 
 
